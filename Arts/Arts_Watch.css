@@ -1,0 +1,22 @@
+/* min-width 769px */
+
+@media screen and (min-width: 769px) {
+
+    .Arts {
+
+    }
+    
+    .Arts__contents {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+
+    /* max-width 768px */
+
+@media screen and (max-width: 768px) {
+   
+
+}
