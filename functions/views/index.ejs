@@ -5,8 +5,13 @@
         <meta name="viewport" content="width=device-witdh, initial-scale=1" >
         <meta name="description" content="aaaaaaaaaa">
         <title>aaaaaaaaaaaaaaaaa</title>
+        <!--　/gakugeki-25a64/us-central1/app　の部分はデプロイするときに消す必要あり -->
         <link rel="stylesheet" href="/gakugeki-25a64/us-central1/app/stylesheets/base.css">
         <link rel="stylesheet" href="/gakugeki-25a64/us-central1/app/stylesheets/arts.css">
+        <script type="module" async>
+            import {lookMore} from "/gakugeki-25a64/us-central1/app/javascripts/arts.mjs"
+            lookMore()
+        </script>
     </head>
     <body>
     <div class="header">
@@ -26,18 +31,14 @@
         <div class="Arts__heading">
             <p>作品を見る↓</p>
         </div>
-        <div class="Arts__contents">
-            <img src="/gakugeki-25a64/us-central1/app/images/a beautiful mountain landscape.png">
-            <img src="/gakugeki-25a64/us-central1/app/images/a beautiful mountain landscape.png">
-            <img src="/gakugeki-25a64/us-central1/app/images/a beautiful mountain landscape.png">
-            <img src="/gakugeki-25a64/us-central1/app/images/a beautiful mountain landscape.png">
-            <img src="/gakugeki-25a64/us-central1/app/images/a beautiful mountain landscape.png">
-            <img src="/gakugeki-25a64/us-central1/app/images/a beautiful mountain landscape.png">
-            <img src="/gakugeki-25a64/us-central1/app/images/a beautiful mountain landscape.png">
-            <img src="/gakugeki-25a64/us-central1/app/images/a beautiful mountain landscape.png">
+        <div class="Arts__contents" id="Arts__contents">
+            <!--　/gakugeki-25a64/us-central1/app　の部分はデプロイするときに消す必要あり -->
+            <a href="/gakugeki-25a64/us-central1/app/images/a beautiful mountain landscape.png" download="A.png">
+                <img src="/gakugeki-25a64/us-central1/app/images/a beautiful mountain landscape.png" class="Arts__imgs">
+            </a>
         </div>
-        <div class="Arts__more">
-            <p>もっと見る</p>
+        <div class="Arts__more" id="Arts__more">        
+            <button>もっと見る</button>
         </div>
     </div>
     </body>
