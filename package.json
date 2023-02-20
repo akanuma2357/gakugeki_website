@@ -2,9 +2,11 @@
   "name": "gakugeki_website",
   "version": "1.0.0",
   "description": "",
+  "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "start": "node functions/index.js"
+    "start": "node functions/index.js",
+    "serve": "firebase emulators:start --only functions:app"
   },
   "repository": {
     "type": "git",
