@@ -17,8 +17,8 @@ const app = initializeApp(firebaseConfig);
 const urlRequest = async () => {
   const response = await fetch("/gakugeki-25a64/us-central1/app/urlRequest");
   const text = await response.text();
-  const urls = JSON.parse(text);
-  return urls;
+  const numList = JSON.parse(text);
+  return numList;
 };
 
 const downloadFile = async (files) => {
@@ -29,7 +29,6 @@ const downloadFile = async (files) => {
       const fileRef = ref(storage, file);
       await getDownloadURL(fileRef)
           .then((url) => {
-            console.log(url);
             fileURLs.push(url);
           });
     }
