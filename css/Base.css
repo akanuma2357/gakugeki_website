@@ -10,7 +10,8 @@
 
     html, body {
         font-size: 16px;
-        font-family: sans-serif;
+        font-family:"游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN", "メイリオ", "MS Pゴシック", sans-serif;
+        color: #4F4C4C;
     }
 
     a {
@@ -20,6 +21,7 @@
         border-radius: 30px;
         background-color: #FFF;
         color: #0073bc;
+        text-decoration: none;
     }
 
     a:link {
@@ -33,11 +35,11 @@
     a:hover {
         color: #b7dbf2;
         background-color: rgba(255, 255, 255, 0.9);
+        text-decoration: underline;
     }
 
     a:active {
         color: #4ca4e8;
-        background-color: rgb(75, 74, 74);
     }
 
     ul {
@@ -53,7 +55,6 @@
 
     html, body {
         font-size: 10px;
-        background-color: #000;
     }
         
     a {
