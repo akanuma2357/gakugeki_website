@@ -10,17 +10,35 @@ const lookMore = async (numList) => {
         const strNum = ("000"+String(numList[i+3*clickCount])).slice(-3)
         urls.push("AI_arts/"+strNum+".png")
       }
+      clickCount += 1
       const fileURLs = await downloadFile(urls);
       const imgArea = document.getElementById("Arts__contents__item");
       for (const fileURL of fileURLs) {
-        const linkElement = document.createElement("a");
-        linkElement.setAttribute("href", fileURL);
-        imgArea.appendChild(linkElement);
         const imgElement = document.createElement("img");
         imgElement.setAttribute("src", fileURL);
-        linkElement.appendChild(imgElement);
+        imgArea.appendChild(imgElement);
+        imgElement.addEventListener("click", async function() {
+          const filename = "aiArt.png"
+          const objXML = new XMLHttpRequest();
+          objXML.open("GET", fileURL, true);
+          // ダウンロードがblobオブジェクトの指定
+          objXML.responseType = "blob";
+          // ダウンロード完了時の処理関数
+          objXML.onload = function (oEvent) {
+              // blobオブジェクト
+              const objBlob = objXML.response;
+              // blobオブジェクトを指すURLオブジェクト
+              const objURL = window.URL.createObjectURL(objBlob);
+              // リンクを生成し、JavaScriptからクリック
+              const objLink = document.createElement("a");
+              document.body.appendChild(objLink);
+              objLink.href = objURL;
+              objLink.download = filename;
+              objLink.click();
+          };
+          objXML.send();
+        });
       }
-      clickCount += 1
     }
   }, false);
 };
@@ -29,6 +47,7 @@ const getNumList = async () => {
   const numList = await urlRequest();
   return numList
 }
+
 const defaultImage = async (numList) => {
   const urls = []
   for (let i = 0; i < 3; i++){
@@ -38,13 +57,25 @@ const defaultImage = async (numList) => {
   const fileURLs = await downloadFile(urls);
   const imgArea = document.getElementById("Arts__contents__item");
   for (const fileURL of fileURLs) {
-    const linkElement = document.createElement("a");
-    linkElement.setAttribute("href", fileURL);
-    linkElement.download = "AIart.png"
-    imgArea.appendChild(linkElement);
     const imgElement = document.createElement("img");
     imgElement.setAttribute("src", fileURL);
-    linkElement.appendChild(imgElement);
+    imgArea.appendChild(imgElement);
+    imgElement.addEventListener("click", async function() {
+      const filename = "aiArt.png"
+      const objXML = new XMLHttpRequest();
+      objXML.open("GET", fileURL, true);
+      objXML.responseType = "blob";
+      objXML.onload = function (oEvent) {
+          const objBlob = objXML.response;
+          const objURL = window.URL.createObjectURL(objBlob);
+          const objLink = document.createElement("a");
+          document.body.appendChild(objLink);
+          objLink.href = objURL;
+          objLink.download = filename;
+          objLink.click();
+      };
+      objXML.send();
+    });
   }
 }
-export {lookMore,getNumList,defaultImage};
+export {lookMore, getNumList, defaultImage};
