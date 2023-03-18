@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="AI Arts Gallery">
+    <meta name="description" content="">
+    <title>Arts</title>
+    <link rel="stylesheet" href="/gakugeki-25a64/us-central1/app/stylesheets/nicepage.css" media="screen">
+<link rel="stylesheet" href="/gakugeki-25a64/us-central1/app/stylesheets/Arts.css" media="screen">
+    <script class="u-script" type="text/javascript" src="/gakugeki-25a64/us-central1/app/javascripts/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="/gakugeki-25a64/us-central1/app/javascripts/nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 5.6.2, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Gakugeki",
+		"logo": "images/gakugeki-logo-v2.png"
+}</script>
+<script type="module" async>
+  import {lookMore, getNumList, defaultImage} from "/gakugeki-25a64/us-central1/app/javascripts/arts.mjs"
+  const numList = await getNumList()
+  console.log(numList)
+  lookMore(numList)
+  defaultImage(numList)
+</script>
+    <meta name="theme-color" content="#24547e">
+    <meta property="og:title" content="Arts">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body class="u-body u-xl-mode" data-lang="en">
+    <%- include("header.ejs") %>
+    <section class="u-clearfix u-section-1" id="sec-7beb">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-col">
+              <div class="u-size-30">
+                <div class="u-layout-col">
+                  <div class="u-container-align-center u-container-style u-layout-cell u-size-60 u-layout-cell-1">
+                    <div class="u-container-layout u-container-layout-1">
+                      <h1 class="u-align-center u-text u-text-default u-text-1">AI Arts Gallery</h1>
+                      <h4 class="u-align-center u-text u-text-default u-text-2">AIによる大作の数々を公開中！<br>気に入ったものがあれば無料でダウンロードしましょう！
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-size-30">
+                <div class="u-layout-row">
+                  <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+                    <div class="u-container-layout u-container-layout-2">
+                      <div class="u-container-style u-expanded-width u-group u-palette-1-base u-radius-30 u-shape-round u-group-1">
+                        <div class="u-container-layout u-container-layout-3">
+                          <h4 class="u-align-center u-text u-text-default u-text-3">現在学檄ワールドのプロトタイプとして作成した「AIアートワールド」をclusterにて公開中です！<br>メタバース空間でアート鑑賞という新感覚をお楽しみいただけます。
+                          </h4>
+                        </div>
+                      </div>
+                      <a href="https://nicepage.dev" class="u-border-none u-btn u-btn-round u-button-style u-hover-palette-3-light-2 u-palette-3-light-1 u-radius-50 u-btn-1">ワールドへ</a>
+                    </div>
+                  </div>
+                  <div class="u-container-align-center u-container-style u-hidden-sm u-hidden-xs u-layout-cell u-size-30 u-layout-cell-3">
+                    <div class="u-container-layout u-valign-middle u-container-layout-4">
+                      <img class="u-expanded-width u-image u-image-round u-radius-50 u-image-1" src="/gakugeki-25a64/us-central1/app/images/AI-art.jpeg" data-image-width="2071" data-image-height="772">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-palette-1-base u-section-2" id="sec-d607">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-text u-text-default u-text-1">作品を見る</h2>
+        <div class="u-expanded-width u-gallery u-layout-grid u-lightbox u-show-text-on-hover u-gallery-1" id="carousel-c3c7">
+          <div class="u-gallery-inner u-gallery-inner-1" role="listbox" id="Arts__contents__item">
+          </div>
+        </div>
+        <a class="u-align-center u-border-none u-btn u-btn-round u-button-style u-hover-palette-3-light-2 u-palette-3-light-1 u-radius-50 u-btn-1" id="Arts__more">もっと見る</a>
+      </div>
+    </section>
+    <%- include("footer.ejs") %>
+  
+</body></html>
