@@ -21,7 +21,7 @@ const urlRequest = async () => {
   return numList;
 };
 
-const downloadFile = async (files) => {
+const downloadFiles = async (files) => {
   const storage = getStorage(app);
   const fileURLs = [];
   for (const file of files) {
@@ -36,4 +36,17 @@ const downloadFile = async (files) => {
   return fileURLs;
 };
 
-export {urlRequest, downloadFile};
+const downloadFile = async (file) => {
+  const storage = getStorage(app);
+  let returnURL = ""
+  if (file) {
+    const fileRef = ref(storage, file);
+    await getDownloadURL(fileRef)
+      .then((url) => {
+        returnURL = url
+      });
+  }
+  return returnURL
+};
+
+export {urlRequest, downloadFiles, downloadFile};
