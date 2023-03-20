@@ -1,0 +1,23 @@
+.Member {
+    height: 200px;
+}
+
+
+.Member ul {
+    display: flex;
+
+}
+
+.Member__item li {
+    display: inline-block;
+    margin-bottom: 10px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.Member__item img {
+    width: 100%;
+    height: auto;
+}
+
