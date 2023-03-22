@@ -33,6 +33,8 @@ const lookMore = async (numList) => {
         ArtImg.classList.add("u-expanded");
         ArtImg.setAttribute("src", fileURL);
         ArtImg.setAttribute("alt", "AIアート");
+        ArtImg.setAttribute("height", "300px")
+        ArtImg.setAttribute("width", "300px")
         ArtImgDiv.appendChild(ArtImg);
         const ArtButton = document.createElement("button");
         ArtButton.classList.add("u-align-center");
@@ -42,10 +44,9 @@ const lookMore = async (numList) => {
         ArtButton.classList.add("u-hover-palette-3-light-2");
         ArtButton.classList.add("u-palette-3-light-1");
         ArtButton.classList.add("u-radius-50");
-        ArtButton.classList.add("u-btn-1");
         ArtButton.classList.add("u-btn-round");
         ArtButton.textContent = "ダウンロード ";
-        ArtButton.setAttribute("style", "vertical-align:middle;display:inline;");
+        ArtButton.setAttribute("style", "vertical-align:middle;display:inline;margin-top:50%");
         ArtButtonDiv.appendChild(ArtButton);
         const ArtButtonIcon = document.createElement("img");
         ArtButtonIcon.classList.add("u-gallery-heading");
@@ -53,7 +54,7 @@ const lookMore = async (numList) => {
         ArtButtonIcon.setAttribute("style", "vertical-align:middle;display:inline;");
         ArtButtonIcon.setAttribute("height", "20px");
         ArtButtonIcon.setAttribute("width", "20px");
-        ArtButtonDiv.appendChild(ArtButtonIcon);
+        ArtButton.appendChild(ArtButtonIcon);
         ArtButton.addEventListener("click", function() {
           const filename = "AI_Art.png"
           const objXML = new XMLHttpRequest();
@@ -113,6 +114,8 @@ const defaultImage = async (numList) => {
     ArtImg.classList.add("u-expanded");
     ArtImg.setAttribute("src", fileURL);
     ArtImg.setAttribute("alt", "AIアート");
+    ArtImg.setAttribute("height", "300px")
+    ArtImg.setAttribute("width", "300px")
     ArtImgDiv.appendChild(ArtImg);
     const ArtButton = document.createElement("button");
     ArtButton.classList.add("u-align-center");
@@ -124,7 +127,7 @@ const defaultImage = async (numList) => {
     ArtButton.classList.add("u-radius-50");
     ArtButton.classList.add("u-btn-round");
     ArtButton.textContent = "ダウンロード ";
-    ArtButton.setAttribute("style", "vertical-align:middle;display:inline;margin-top:100%");
+    ArtButton.setAttribute("style", "vertical-align:middle;display:inline;margin-top:50%");
     ArtButtonDiv.appendChild(ArtButton);
     const ArtButtonIcon = document.createElement("img");
     ArtButtonIcon.classList.add("u-gallery-heading");
