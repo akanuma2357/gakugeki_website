@@ -19,11 +19,11 @@ function getRandomInt(max) {
 
 app.get("/urlRequest", function(req, res, next) {
   const numList = []
-  for (let i = 1; i < 112; i++){
+  for (let i = 1; i <= 150; i++){
     numList.push(i)
   }
   const randomList = []
-  for (let i = 0; i < 111; i++){
+  for (let i = 0; i < 150; i++){
     const randInt = getRandomInt(111-i)
     randomList.push(numList[randInt])
     numList.splice(randInt,1)

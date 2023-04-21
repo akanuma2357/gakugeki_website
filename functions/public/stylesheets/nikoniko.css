@@ -1,3 +1,123 @@
-.u-section-nikoniko {
+.block-767 {
+    display: none;
+  }
+  @media (max-width: 767px) {
+    .block-767 {
+      display: block;
+    }
+  }
+
+.u-section-nikoniko .u-sheet-1 {
     width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.u-section-nikoniko .u-image-1 {
+    margin: 0;
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.u-section-nikoniko .u-layout-1 {
+    position: absolute;
+    height: 400px;
+    width: 700px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffc;
+}
+
+.u-section-nikoniko .u-layout-cell-1 {
+    padding: 13px;
+}
+
+.u-section-nikoniko .u-text-1 {
+    font-weight: bolder;
+}
+
+.u-section-nikoniko .u-text-2 {
+    font-weight: bold;
+    color: green;
+}
+
+.u-section-nikoniko .u-text-3 {
+    font-weight: bolder;
+}
+
+.u-section-nikoniko .u-text-4 {
+    font-weight: bolder;
+}
+
+.u-section-nikoniko .u-text-4-sub {
+    color: rgb(245, 28, 230);
+}
+
+.u-section-nikoniko .u-text-5 {
+    font-weight: bolder;
+}
+
+.u-section-nikoniko .u-text-5-sub {
+    font-size: xx-large;
+}
+
+.u-section-nikoniko .u-text-6 {
+    font-weight: bolder;
+}
+
+@media (max-width: 991px) {
+    .u-section-nikoniko .u-layout-1 {
+        height: 350px;
+        width: 630px;
+    }
+
+    .u-section-nikoniko .u-layout-cell-1 {
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+    }
+
+    .u-section-nikoniko .u-text-1 {
+        margin: 15px 0;
+    }
+
+    .u-section-nikoniko .u-text-2 {
+        margin: 15px 0;
+    }
+
+    .u-section-nikoniko .u-text-3 {
+        margin: 10px 0;
+    }
+
+    .u-section-nikoniko .u-text-4 {
+        margin: 10px 0;
+    }
+
+    .u-section-nikoniko .u-text-5 {
+        margin: 20px 0;
+    }
+
+    .u-section-nikoniko .u-text-6 {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .u-section-nikoniko .u-image-1 {
+        margin: 0;
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        vertical-align: bottom;
+    }
+
+    .u-section-nikoniko .u-layout-1 {
+        height: 400px;
+        width: 400px;
+    }
+
+    .u-section-nikoniko .u-text-1 {
+        margin: 20px 0;
+    }
 }
