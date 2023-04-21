@@ -18,6 +18,7 @@ const lookMore = async (numList) => {
         const ArtBlock = document.createElement("div");
         ArtBlock.classList.add("u-effect-fade");
         ArtBlock.classList.add("u-gallery-item");
+        ArtBlock.classList.add("u-gallery-item-1");
         imgArea.appendChild(ArtBlock);
         const ArtImgDiv = document.createElement("div");
         ArtImgDiv.classList.add("u-back-slide");
@@ -33,8 +34,6 @@ const lookMore = async (numList) => {
         ArtImg.classList.add("u-expanded");
         ArtImg.setAttribute("src", fileURL);
         ArtImg.setAttribute("alt", "AIアート");
-        ArtImg.setAttribute("height", "300px")
-        ArtImg.setAttribute("width", "300px")
         ArtImgDiv.appendChild(ArtImg);
         const ArtButton = document.createElement("button");
         ArtButton.classList.add("u-align-center");
@@ -99,6 +98,7 @@ const defaultImage = async (numList) => {
     const ArtBlock = document.createElement("div");
     ArtBlock.classList.add("u-effect-fade");
     ArtBlock.classList.add("u-gallery-item");
+    ArtBlock.classList.add("u-gallery-item-1");
     imgArea.appendChild(ArtBlock);
     const ArtImgDiv = document.createElement("div");
     ArtImgDiv.classList.add("u-back-slide");
@@ -114,8 +114,6 @@ const defaultImage = async (numList) => {
     ArtImg.classList.add("u-expanded");
     ArtImg.setAttribute("src", fileURL);
     ArtImg.setAttribute("alt", "AIアート");
-    ArtImg.setAttribute("height", "300px")
-    ArtImg.setAttribute("width", "300px")
     ArtImgDiv.appendChild(ArtImg);
     const ArtButton = document.createElement("button");
     ArtButton.classList.add("u-align-center");
@@ -126,6 +124,7 @@ const defaultImage = async (numList) => {
     ArtButton.classList.add("u-palette-3-light-1");
     ArtButton.classList.add("u-radius-50");
     ArtButton.classList.add("u-btn-round");
+    ArtButton.classList.add("u-btn-2");
     ArtButton.textContent = "ダウンロード ";
     ArtButton.setAttribute("style", "vertical-align:middle;display:inline;margin-top:50%");
     ArtButtonDiv.appendChild(ArtButton);
