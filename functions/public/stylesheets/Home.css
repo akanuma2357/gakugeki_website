@@ -208,7 +208,7 @@
 
 .u-section-2 .u-text-1 {
   font-weight: 700;
-  margin: 40px auto 10px;
+  margin: 40px auto 40px;
 }
 
 .u-section-2 .u-layout-wrap-1 {
@@ -232,12 +232,13 @@
 }
 
 .u-section-2 .u-container-layout-2 {
-  padding: 10px 30px 10px 30px;
+  padding: 40px 40px 40px 40px;
 }
 
 .u-section-2 .u-text-2 {
   font-size: 1.75rem;
   margin: 0 auto 0;
+  line-height: 2.5rem;
 }
 
 .u-section-2 .u-layout-cell-2 {
@@ -474,7 +475,7 @@
 
 .u-section-3 .u-text-1 {
   font-weight: 700;
-  margin: 52px auto 0;
+  margin: 52px auto 40px;
 }
 
 .u-section-3 .u-text-2 {
@@ -697,7 +698,7 @@
 
 .u-section-5 .u-text-1 {
   font-weight: 700;
-  margin: 0 auto 0;
+  margin: 0 auto 40px;
 }
 
 .u-section-5 .u-layout-wrap-1 {
@@ -869,6 +870,7 @@
 
 .u-section-6 .u-text-2 {
   margin: 44px 66px 0;
+  line-height: 2.5rem;
 }
 
 .u-section-6 .u-layout-wrap-1 {
