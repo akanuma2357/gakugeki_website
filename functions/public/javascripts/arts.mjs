@@ -4,10 +4,10 @@ const lookMore = async (numList) => {
   const moreButton = document.getElementById("Arts__more");
   let clickCount = 1
   moreButton.addEventListener("click", async function() {
-    if (clickCount < 37){
+    if (clickCount < 49){
       const urls = []
       for (let i = 0; i < 3; i++){
-        const strNum = ("000"+String(numList[i+3*clickCount])).slice(-3)
+        const strNum = (String(numList[i+3*clickCount]))
         urls.push("AI_arts/"+strNum+".png")
       }
       clickCount += 1
@@ -44,6 +44,7 @@ const lookMore = async (numList) => {
         ArtButton.classList.add("u-palette-3-light-1");
         ArtButton.classList.add("u-radius-50");
         ArtButton.classList.add("u-btn-round");
+        ArtButton.classList.add("u-btn-2");
         ArtButton.textContent = "ダウンロード ";
         ArtButton.setAttribute("style", "vertical-align:middle;display:inline;margin-top:50%");
         ArtButtonDiv.appendChild(ArtButton);
@@ -88,7 +89,7 @@ const getNumList = async () => {
 const defaultImage = async (numList) => {
   const urls = []
   for (let i = 0; i < 3; i++){
-    const strNum = ("000"+String(numList[i])).slice(-3)
+    const strNum = (String(numList[i]))
     urls.push("AI_arts/"+strNum+".png")
   }
   const fileURLs = await downloadFiles(urls);
