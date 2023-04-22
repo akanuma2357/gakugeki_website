@@ -18,6 +18,7 @@
 
 .u-section-1 {
   background-image: url("/gakugeki-25a64/us-central1/app/images/metaverse_image.jpeg");
+  background-size: cover;
 }
 
 .u-section-1 .u-sheet-1 {
