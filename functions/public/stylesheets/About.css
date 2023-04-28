@@ -961,3 +961,7 @@
     width: 340px;
   }
 }
+
+.member_color {
+  background-color: rgba(58, 110, 191, 0.8);
+}
